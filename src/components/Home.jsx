@@ -2,6 +2,7 @@ import { Box, Paper, Grid2, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import InsertForm from './InsertForm'
 import List from './List'
+import cs from'./Images.jsx/cs.jpg';
 
 export default function Home() {
     let initialValue
@@ -39,10 +40,12 @@ export default function Home() {
         sx={{
             width: "100%",
             height: "100vh",
-            backgroundColor: "pink",
+            //backgroundColor: "yellow",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            fontSize:"30px",backgroundImage:`url(${cs})`,backgroundPosition:"up",backgroundSize:"cover"
+
         }}
         >
             <Paper sx={{ p: 5 }}>
